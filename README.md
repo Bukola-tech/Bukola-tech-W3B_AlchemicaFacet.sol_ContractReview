@@ -6,7 +6,7 @@
 **Author:** [Shaleye Anuoluwapo Bukola](#https://github.com/dashboard) 
 **Classification:** Public  
 **Status:** Draft  
-**Date Created:** [3rd November 2024]
+**Date Created:** 3rd November 2024
 
 ## Table of Contents
 - [INTRODUCTION](#introduction)
@@ -26,7 +26,7 @@
 ## INTRODUCTION
 
 ### 1.1 About Me
-[Hello! I am a MERN stack developer and a smart contract developer with a strong foundation in both Web2 and Web3 technologies. My expertise lies in blockchain development, where I focus on creating secure and efficient smart contracts that enhance user experiences and drive innovation.]
+Hello! I am a MERN stack developer and a smart contract developer with a strong foundation in both Web2 and Web3 technologies. My expertise lies in blockchain development, where I focus on creating secure and efficient smart contracts that enhance user experiences and drive innovation.
 
 ### 1.2 Skills
 - Smart Contract Development
@@ -127,12 +127,19 @@ The contract employs several security measures, including:
 ## FINDINGS
 
 ### 3.1 Qualitative Analysis
-1. **Signature Verification**: Ensure that all functions requiring signatures have robust checks to prevent unauthorized access.
-2. **Randomness Handling**: Verify that the random numbers requested from Chainlink VRF are handled correctly to avoid potential manipulation.
-3. **Testing**: Comprehensive testing should be conducted to ensure all edge cases are covered, particularly in functions that modify state.
-- **Functionality:** The contract provides comprehensive functionalities for managing alchemica resources, including surveying, claiming, and transferring alchemica.
-- **Security:** The contract implements access control mechanisms, ensuring that only authorized users can perform sensitive operations.
-- **Gas Efficiency:** The contract appears to be optimized for gas usage, particularly in batch processing functions.
+The following observations were made regarding the `AlchemicaFacet` contract:
+
+- **Signature Verification**: It is crucial to ensure that all functions requiring signatures implement robust checks to prevent unauthorized access.
+  
+- **Randomness Handling**: There should be a verification process to ensure that the random numbers requested from Chainlink VRF are handled correctly, mitigating the risk of potential manipulation.
+
+- **Testing**: Comprehensive testing is necessary to cover all edge cases, particularly in functions that modify the contract's state.
+
+- **Functionality**: The contract offers a wide range of functionalities for managing alchemica resources, including surveying, claiming, and transferring alchemica.
+
+- **Security**: Access control mechanisms are effectively implemented, ensuring that only authorized users can perform sensitive operations.
+
+- **Gas Efficiency**: The contract appears to be optimized for gas usage, especially in batch processing functions, which can lead to cost savings for users.
 
 ### 3.2 Summary
 The `AlchemicaFacet` contract is well-structured and provides essential functionalities for the Aavegotchi Realm. It adheres to best practices in smart contract development, with a focus on security and efficiency.
